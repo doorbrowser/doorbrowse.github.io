@@ -69,6 +69,18 @@ a {
 .content .layout-right .miaomiao-description {
     margin-bottom: 75px
 }
+.content .layout-right .miaomiao-description .description_step{
+
+    font-size: 2vw;
+    text-align: center;
+    color: azure; 
+}
+.content .layout-right .miaomiao-description .descript_guide {
+
+    font-size: 1vw;
+    text-align: center;
+    color: azure; 
+}
 
 .content .layout-right .miaomiao-description ol {
     color: #fff;
@@ -162,6 +174,19 @@ a {
     .content .layout-right .miaomiao-description {
         margin-bottom: 50px
     }
+    .content .layout-right .miaomiao-description .description_step{
+
+        font-size: 4.5vw;
+        text-align: center;
+        color: azure; 
+    }
+    .content .layout-right .miaomiao-description .descript_guide {
+
+        font-size: 3.5vw;
+        text-align: center;
+        color: azure; 
+
+    }    
     .content .layout-right .miaomiao-description ol {
         font-size: 4vw
     }
