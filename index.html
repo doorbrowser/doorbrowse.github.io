@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="img/favicon.jpeg">
 
     <!-- fontaws -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- css -->
     <link rel="stylesheet" href="css/common.css" type="text/css" />
@@ -25,7 +26,7 @@
 <body>
     <div class="content">
         <div class="layout-left">
-            <img src="img/introduction_version_3.png">
+            <img src="img/introduction_version_4.gif">
         </div>
 
         <div class="layout-right">
@@ -35,86 +36,87 @@
                 </div>
                 <div class="miaomiao-info-title">
                     <span id="app-name" i18n="app_name">任意门</span><br>
-                    <span class="miaomiao-info-title-slogan" i18n="sub_title_1">成人限定来下载</span><br>
-                    <span class="miaomiao-info-title-slogan" i18n="sub_title_2">别有洞天在里面</span>
+                    <span class="miaomiao-info-title-slogan" i18n="sub_title_1">限时免费</span><br>
+                    <span class="miaomiao-info-title-slogan" i18n="sub_title_2">精选 100000+ 部</span>
 
                 </div>
             </div>
-            <div class="miaomiao-description">                <div>
-                <h1 class="description_step" i18n="description_step" >上车旅程：下载 ➙ 搜索（热搜）➙ 老司机开车🚗</h1>
-                <br>
-                <ol>
-                    <li i18n="description_1">最安全、快速的网页浏览体验</li>
-                    <li i18n="description_2">隐私浏览轻松上锁</li>
-                    <li i18n="description_3">加速载入网页内容</li>
-                </ol>
-                <br>
-                <h1 class="descript_guide" i18n="descript_guide">下方下载 · 立即上车</h1>
-            </div>
-           
-            <div class="miaomiao-demo">
-            
-                <img src="img/introduction_version_3.png">
-
-            </div>
-            <div class="miaomiao-download">
-               
-
-                <div class="miaomiao-download-qrcode" style="text-align: center; display: inline-flexbox;">
-                    <img src="img/qrcode.png" style="width: 40%; height: auto;">
+            <div class="miaomiao-description">
+                <div>
+                    <h1 class="description_step" i18n="description_step">宇宙第一看片神器</h1>
+                    <br>
+                    <ol>
+                        <li i18n="description_1">快速预览，挑片不踩雷</li>
+                        <li i18n="description_2">超快加载影片，没有片前广告</li>
+                        <li i18n="description_3">私密浏览轻松上锁</li>
+                    </ol>
+                    <br>
+                    <h1 class="descript_guide" i18n="descript_guide">下方下载 · 立即上车</h1>
                 </div>
-                <div class="miaomiao-download-buttom">
-                  
-                    <div>
-                        <a href="https://doorbrowse.page.link/android" target="_blank">
-                            <img src="https://i.imgur.com/oJJ32tI.png">
-                            <p i18n="download_android">Android 下载</p>
-                        </a>
+
+                <div class="miaomiao-demo">
+
+                    <img src="img/introduction_version_4.gif">
+
+                </div>
+                <div class="miaomiao-download">
+
+
+                    <div class="miaomiao-download-qrcode" style="text-align: center; display: inline-flexbox;">
+                        <img src="img/qrcode.png" style="width: 40%; height: auto;">
                     </div>
-                    <div>
-                        <a href="https://doorbrowse.page.link/ios">
-                            <img src="https://i.imgur.com/yQyMOBW.png">
-                            <p i18n="download_ios">IOS 下载</p>
-                        </a>
+                    <div class="miaomiao-download-buttom">
+
+                        <div>
+                            <a href="https://doorbrowse.page.link/android" target="_blank">
+                                <img src="https://i.imgur.com/oJJ32tI.png">
+                                <p i18n="download_android">Android 下载</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://doorbrowse.page.link/ios">
+                                <img src="https://i.imgur.com/yQyMOBW.png">
+                                <p i18n="download_ios">IOS 下载</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        $(document).ready(function() {
+        <script>
+            $(document).ready(function () {
 
-            var userLanguage;
-            if (navigator.userLanguage) {
-                userLanguage = navigator.userLanguage.substring(0, 2).toLowerCase();
-            } else {
-                userLanguage = navigator.language.substring(0, 2).toLowerCase();
-            }
-            console.log(userLanguage);
-
-
-            /*默认语言*/
-            var defaultLang = userLanguage || "cn"; // 預設為簡體
-
-            if (defaultLang != 'zh' && defaultLang != 'cn') {
-                defaultLang = "en"; // 若不為繁體則統一設定為簡體
-            }
-
-            console.log(defaultLang);
-            $("[i18n]").i18n({
-                defaultLang: defaultLang,
-                filePath: "i18n/",
-                filePrefix: "i18n_",
-                fileSuffix: "",
-                forever: true,
-                callback: function() {
-                    console.log("i18n has been completed.");
+                var userLanguage;
+                if (navigator.userLanguage) {
+                    userLanguage = navigator.userLanguage.substring(0, 2).toLowerCase();
+                } else {
+                    userLanguage = navigator.language.substring(0, 2).toLowerCase();
                 }
-            });
+                console.log(userLanguage);
 
-        });
-    </script>
+
+                /*默认语言*/
+                var defaultLang = userLanguage || "cn"; // 預設為簡體
+
+                if (defaultLang != 'zh' && defaultLang != 'cn') {
+                    defaultLang = "en"; // 若不為繁體則統一設定為簡體
+                }
+
+                console.log(defaultLang);
+                $("[i18n]").i18n({
+                    defaultLang: defaultLang,
+                    filePath: "i18n/",
+                    filePrefix: "i18n_",
+                    fileSuffix: "",
+                    forever: true,
+                    callback: function () {
+                        console.log("i18n has been completed.");
+                    }
+                });
+
+            });
+        </script>
 </body>
 
 </html>
