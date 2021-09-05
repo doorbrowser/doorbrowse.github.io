@@ -1,15 +1,15 @@
 {
-
     "head_title": "Adult browser! Spend the spring supper with you every night!",
-    "app_name": "Any door",
-    "sub_title_1": "Free for a limited time",
-    "sub_title_2": "Featured 100000+ parts",
-    "description_1": "Quick preview, pick a film without stepping on thunder",
-    "description_2": "Super fast loading video, no pre-film ads",
-    "description_3": "Easily lock private browsing",
-    "description_step":"The first viewing artifact in the universe",
-    "descript_guide" :"Download below · Get in the car immediately",
+    "app_name": "DoorBrowser",
+    "sub_title_1": "The strongest movie-watching artifact on the surface",
+    "sub_title_2": "",
+    "description_1": "Free 100000+ videos",
+    "description_2": "Quickly preview the video, pick the film without stepping on the thunder",
+    "description_3": "No pre-movie video ads",
+    "description_4": "Lock and browse privately",
+    "description_5": "The safest download from the store",
+    "description_step": "The first viewing artifact in the universe",
+    "descript_guide": "Download below · Get in the car immediately",
     "download_android": "Android Download",
-    "download_ios": "IOS download"
-
+    "download_ios": "IOS Download"
 }
